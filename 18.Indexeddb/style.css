@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.title {
+    text-align: center;
+    margin: 10px;
+}
+.add_names {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#add_btn {
+    border-radius: 20px;
+    width: 12vw;
+    height: 10vh;
+    font-weight: bold;
+    border: 1.5px solid #000;
+}
+.add_input {
+    width: 60vw;
+    font-size: 19px;
+    height: 10vh;
+    border-radius: 20px;
+    padding: 5px;
+}
+.add_input::placeholder{
+    padding: 5px;
+}
+.your_dates{
+    margin-bottom: 9vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.delete{
+    background-color: red;
+    border-radius: 20px;
+    width: 12vw;
+    height: 7vh;
+    color: #fff;
+    font-weight: bold;
+    border: 1.5 px solid #000;
+}
+.impossible{
+    display:nome;
+}
+.possible{
+    border-radius: 20px;
+    width: 12vw;
+    height: 7vh;
+    color: #fff;
+    font-weight: bold;
+    border: 1.5 px solid #000;
+    margin: 0 10px;
+}
