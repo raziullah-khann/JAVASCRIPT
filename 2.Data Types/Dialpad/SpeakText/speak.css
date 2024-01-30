@@ -1,0 +1,162 @@
+/* speak.css */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to your elements */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top:0px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px; /* Add spacing between items */
+}
+
+/* Style the links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mat1 {
+    width: 80%;
+    margin:0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+li:hover {
+    border: 1px solid white;
+    
+}
+
+button:hover {
+    background-color: #005599;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    width: calc(20%  -20px); /* 25% width for each card, minus margin */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include margin in the width calculation */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: calc(33.33% - 20px); /* Adjust card width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center-align cards */
+    }
+
+    .card {
+        max-width: 100%; /* Full width for cards on smaller screens */
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .mat1 {
+        width: 90%; /* Make the container wider for smaller screens */
+    }
+    /* Add more specific styles for smaller screens as needed */
+}
+
+/* Define styles for screens with a maximum width of 480px (typical for smartphones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Further reduce font size for small screens */
+    }
+    .mat1 {
+        width: 95%; /* Make the container almost full width */
+    }
+    /* Add more specific styles for even smaller screens as needed */
+}
+
+/* Define styles for screens with a minimum width of 1024px (typical for laptops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px; /* Adjust font size for larger screens */
+    }
+    .mat1 {
+        width: 80%; /* Make the container slightly narrower for laptops */
+    }
+    /* Add more specific styles for laptops as needed */
+}
